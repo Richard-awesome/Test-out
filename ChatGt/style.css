@@ -1,0 +1,126 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  cursor: crosshair;
+  font-weight: bolder
+  
+}
+
+body{
+  background-color: rgba(17, 17, 17, 0.979);
+  
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+header{
+  max-width: 1000px;
+  height: 2000px;
+  float: left;
+   background-color: black;
+   position:  fixed;
+   opacity: 0.5;
+  }
+.shooter{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+.side{
+  
+}
+
+.put{
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.styled-input{
+  width: 70rem;
+  padding: 20px;
+  border-radius:70rem;
+  border: none;
+  background-color: rgb(71, 69, 69);
+}
+
+.styled-push{
+  padding: 30px;
+
+  border: none;
+  border-radius:100%;  
+  opacity: 0.3;
+
+}
+
+.black{
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.contain{
+  display: flex;
+  flex-direction:column ;
+  gap: 100px;
+  justify-content: center;
+  align-items: flex-end;padding: 20px;
+}
+
+.mine{
+  background-color: rgb(71, 69, 69);
+  padding: 20px;
+  border-radius: 1rem;
+  align-items: flex-start;
+  justify-content: end;
+  max-width: 100rem;
+  color: antiquewhite;
+  font-family: "Qwitcher Grypen", cursive;
+  font-size: 30px;
+  animation: identifier 0.2s ease-in;
+}
+
+
+
+.yours{
+  transition: all 0.3s;
+  animation: identify 0.2s ease-in reverse;
+  font-family: "Playwrite GB S", cursive;
+  margin-left: 5000px;
+  background-color: rgba(17, 17, 17, 0.979);
+  padding: 100px;
+  border-radius:1rem;
+  
+}
+
+@keyframes identifier {
+  0%{
+    transform: translateX(-110px);
+    scale: 0;
+  }
+
+  100%{
+    scale: 1.5;
+  }
+}
+
+
+@keyframes identify {
+  0%{
+    transform: translateX(110px);
+    scale: 1.5;
+  }
+
+  100%{
+    scale: 0;
+  }
+}
